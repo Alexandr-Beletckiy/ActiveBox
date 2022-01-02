@@ -1,0 +1,43 @@
+body {
+	margin: 0px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: #6c7279;
+	background-color: #000;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.conteiner {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.header {
+	
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #515369;
+	padding: 35px 0;
+
+}
+
+.nav {
+font-size: 13px;
+font-weight: 700;
+}
+
+.nav_link {
+color: #fff;
+text-decoration: none;
+}
+
+.nav_link:hover {
+	text-decoration: underline;
+}
