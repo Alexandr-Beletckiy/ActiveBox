@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 		<meta name="viewport" content="with=divice, initial-scale=1.0">
 		<title>ActiveBox</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -15,14 +16,14 @@
 					<div class="header__logo">
 						<img src="img/logo.png" alt="Logo">
 					</div>
-					<nav class="nav">
-						<a class="nav_link" href="#">FEATURES</a>
-						<a class="nav_link" href="#">WORKS</a>
-						<a class="nav_link" href="#">OUR TEAM</a>
-						<a class="nav_link" href="#">TESTIMONIALS</a>
-						<a class="nav_link" href="#">DOWNLOAD</a>
+					<nav class="nav" id="nav">
+						<a class="nav_link" href="#" data-scroll="#feature">FEATURES</a>
+						<a class="nav_link" href="#" data-scroll="#work">WORKS</a>
+						<a class="nav_link" href="#" data-scroll="#team">OUR TEAM</a>
+						<a class="nav_link" href="#" data-scroll="#client">TESTIMONIALS</a>
+						<a class="nav_link" href="#" data-scroll="#download">DOWNLOAD</a>
 					</nav>
-					<div class="burger">
+					<div class="burger" id="navToggle">
 						<span class="burger__item"></span>
 					</div>
 				</div>
@@ -39,7 +40,7 @@
 			</div>
 		</div>
 
-		<div class="conteiner">
+		<div class="conteiner" id="feature">
 			<div class="feature">
 				<div class="feature__item">
 					<img src="img/features/feature1.png" alt="" class="feature__icon">
@@ -86,7 +87,7 @@
 			</div>
 		</div>
 
-		<div class="works">
+		<div class="works" id="work">
 			<div class="works__item">
 				<img class="works__photo" src="img/works/work1.jpg" alt="">
 				<div class="works__content">
@@ -145,7 +146,7 @@
 			</div>
 		</div>
 
-		<div class="team">
+		<div class="team" id="team">
 			<div class="conteiner">
 				<div class="team__inner">
 					<div class="team__item">
@@ -211,23 +212,42 @@
 			</div>
 		</div>
 
-		<div class="client">
+		<div class="client" id="client">
 			<div class="conteiner">
-				<div class="client__item">
-					<div class="client__photo">
-						<img class="client__img" src="img/client/client.jpg" alt="">
-					</div>
-					<div class="client__content">
-						<div class="client__text">“Integer posuere erat a ante venenatis dapibus posuere velit alquet. Donec sed odio dui. Aenean eu leo quam..."
+
+				<div class="clientSlider" id="clientSlider">
+					<div>
+						<div class="client__item">
+							<div class="client__photo">
+								<img class="client__img" src="img/client/client.jpg" alt="">
+							</div>
+							<div class="client__content">
+								<div class="client__text">“Integer posuere erat a ante venenatis dapibus posuere velit alquet. Donec sed odio dui. Aenean eu leo quam..."
+								</div>
+								<div class="client__author">Susan Sims, interaction desinger at xyz
+								</div>
+							</div>
 						</div>
-						<div class="client__author">Susan Sims, interaction desinger at xyz
+					</div>
+					<div>
+						<div class="client__item">
+							<div class="client__photo">
+								<img class="client__img" src="img/client/client.jpg" alt="">
+							</div>
+							<div class="client__content">
+								<div class="client__text">“Integer posuere erat a ante venenatis dapibus posuere velit alquet. Donec sed odio dui. Aenean eu leo quam..."
+								</div>
+								<div class="client__author">Susan Sims, interaction desinger at xyz
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>			
 		</div>
 
-		<div class="download">
+		<div class="download" id="download">
 			<div class="conteiner">
 				<h3 class="download__title">Are You Ready to Start? Downloand Now For Free!</h3>
 				<div class="download__text">
@@ -268,6 +288,8 @@
 				</div>
 			</div>
 		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		
 	</body>
 </html>

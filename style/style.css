@@ -309,9 +309,16 @@ margin-left: 0px;
 	background-color: #53354a;
 	overflow: hidden;
 }
+
+.clientSlider {
+	height: 500px;
+	/*overflow: hidden;*/
+}
+
 .client__item {
 	display: flex;
 	flex-wrap: wrap;
+	overflow: hidden;
 }
 
 .client__photo {
@@ -468,11 +475,26 @@ margin-left: 0px;
 @media (max-width: 991px) {
 	.nav {
 		display: none;
+		position: absolute;
+		right: 0;
+		top: 100%;
+		flex-direction: column;
+		width: 100%;
+		text-align: right;
+		background-color: #31344e;
+	}
+
+	.nav.show {
+		display: flex;
+	}
+
+	.nav_link {
+		padding: 9px 15px;
 	}
 
 	.burger {
 	display: block;
-}
+	}
 
 	.intro__title {
 		font-size: 40px;
